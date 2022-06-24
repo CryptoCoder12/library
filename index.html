@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>library</title>
+</head>
+<body>
+    <header>
+        <h1>My Library</h1>
+    </header>
+
+    <div id="library">
+        <div id="library-header">
+            <div>Title</div>
+            <div>Author</div>
+            <div>Pages</div>
+            <div>Read</div>
+            <div>Remove</div>
+        </div>
+        <div id="library-list"></div>
+    </div>
+    <button id="add-book" onclick="showModal()">
+        <svg viewbox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path></svg>
+    </button>
+    <div id="form-modal" class="hide">
+        <form id="new-book-form">
+            <div class="close" onclick="hideModal()">
+                <svg viewbox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+            </div>
+            <h2>Add New Book</h2>
+            <label for="form-title">Title</label>
+            <input type="text" id="form-title" placeholder="Title" name="form-title" required />
+            <label for="form-author">Author</label>
+            <input type="text" id="form-author" placeholder="Author" name="form-author" required />
+            <label for="form-pages">Pages</label>
+            <input type="number" id="form-pages" placeholder="Pages" name="form-pages" required />
+            <label for="form-status">Status</label>
+            <input type="checkbox" name="form-read" id="form-read" value="" />
+            <button type="button" onclick="addBookToLibrary()">Add Book</button>
+
+        </form>
+
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

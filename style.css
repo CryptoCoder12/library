@@ -1,0 +1,152 @@
+body {
+    font-family: cursive;
+    font-size: 25px;
+    font-weight: 400;
+    background-color: beige;
+    color: black;
+
+}
+svg {
+    height: 35px;
+    fill: black;
+
+}
+button {
+    border: none;
+    background: none;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: fantasy;
+
+}
+.hide { display: none !important; }
+.show { display: grid !important; }
+
+h1, h2 {
+    font-weight: 200;
+    font-style: italic;
+
+}
+h1 {
+    font-size: 70px;
+    text-align: center;
+    background-color: gold;
+    padding: 40px 40px 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px;
+
+}
+h2 {
+    font-size: 50px;
+	text-align: center;
+	border-bottom: 1px solid;
+	color: black;
+	padding-bottom: 20px;
+	margin-bottom: 20px; 
+
+}
+#library {
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+#library-header, 
+#library-list > div {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px;
+
+}
+#library-header {
+    background-color: goldenrod;
+    color: black;
+
+}
+#library-header > div,
+#library-list > div {
+    padding: 10px, 20px;
+    
+}
+#add-book {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: lightgray;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px;
+    height: 60px;
+    width: 60px;
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#form-modal {
+	position: fixed;
+	height: 100vh;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgb(34,34,34,0.25);
+	display: grid;
+	justify-content: center;
+	align-content: center;
+}
+
+#new-book-form {
+	position: relative;
+	min-width: 600px;
+	max-width: 70%;
+	margin: 0 auto;
+	padding: 30px;
+	box-sizing: border-box;
+	background-color: gold;
+	border-radius: 5px;
+	box-shadow: 0 5px 8px rgba(0,0,0,0.25);
+	color: black;
+}
+
+#new-book-form > * { display: block; }
+
+#new-book-form .close {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+}
+
+#new-book-form .close svg {
+	fill: black;
+	height: 25px;
+}
+
+#new-book-form label:not(:first-child) { margin-top: 20px; }
+
+#new-book-form label { margin-bottom: 10px; }
+
+#new-book-form input[type="text"],
+#new-book-form input[type="number"] {
+	box-sizing: border-box;
+	width: 100%;
+	font-family: 'Piazzolla', serif;
+	font-weight: 200;
+	font-style: italic;
+	font-size: 20px;
+	background-color: #EEE7DF;
+	color: #222;
+	border-radius: 5px;
+	border: none;
+	padding: 10px;
+}
+
+#new-book-form button {
+	background-color: #FAC96D;
+	border-radius: 5px;
+	padding: 5px 20px 7px;
+	margin-top: 50px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+}
